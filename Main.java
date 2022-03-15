@@ -69,5 +69,6 @@ public class Main {
                 System.out.println("Pilihanmu nggak ada :(");
             }
         }
+        in.close();
     }
 }
