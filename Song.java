@@ -6,9 +6,11 @@ public class Song {
         this.judul = judul;
         this.penyanyi = penyanyi;
     }
+
     public String getJudul(){
         return judul;
     }
+    
     @Override
     public String toString(){
         return  "\nJudul    : " + judul +
