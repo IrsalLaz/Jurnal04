@@ -2,6 +2,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
 
+
 public class Main {
     public static void main(String[] args) {
         
@@ -25,6 +26,7 @@ public class Main {
             choice = in.nextInt();
             
             if (choice == 1) {
+                in.nextLine();
                 System.out.print("Judul:");
                 judul = in.nextLine();
                 System.out.print("Penyanyi: ");
@@ -81,6 +83,9 @@ public class Main {
                     System.out.println("Pilihanmu nggak ada :(");
                 }
             }
+            else{
+                System.out.println("Pilihanmu nggak ada:(");
+            }
 
             System.out.println("Mau lanjut?\n(y/n)");
             String yesOrNo = in.next();
@@ -90,11 +95,12 @@ public class Main {
             else if(yesOrNo.equals("n")){
                 isContinue = false;
             }
-            //need else for mismatch input
+            else{
+                System.out.println("Pilihanmu nggak tepat:)");
+                isContinue = true;
+            }
         }
 
         in.close();
     }
-    //perhaps need new meth for looping conf
-    
 }
